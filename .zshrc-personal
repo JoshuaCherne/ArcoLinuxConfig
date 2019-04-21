@@ -67,14 +67,6 @@ alias cleanup='sudo apt autoremove && sudo apt autoclean && sudo apt clean'
 # Update and upgrade
 alias update='sudo apt update && sudo apt upgrade'
 
-# Cava
- 	cav() {
-		cd;
- 		cd .cava;
- 		./cava;
- 	}
-alias cava="cav"
-
 # Termbin
 alias tb='nc termbin.com 9999'
 
