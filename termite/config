@@ -1,5 +1,4 @@
 [options]
-#https://github.com/thestinger/termite/blob/master/config
 allow_bold = true
 audible_bell = false
 browser = xdg-open
@@ -8,12 +7,14 @@ cursor_blink = system
 cursor_shape = block
 dynamic_title = true
 filter_unmatched_urls = true
-font = Monospace 12
+#font = curie 12
+font = DejaVu Sans Mono Book 12
+#font = undefined medium 12
 geometry = 900x650
-highlight = #2f2f2f
+highlight = #C8CCD4
 icon_name = terminal
 modify_other_keys = false
-mouse_autohide = false
+mouse_autohide = true
 scroll_on_output = false
 scroll_on_keystroke = true
 scrollback_lines = 15000
@@ -32,27 +33,16 @@ urgent_on_bell = true
 #border_width = 10
 #roundness = 2.0
 
-############################################################
-#### You can change the color coding to your liking
-#### There is a folder themes in ~/config/termite/themes
-#### Copy/paste the colors from one of the 79+ templates to this one
-#### A backup of the original config termite is present
-############################################################
-#### Use websites to make the terminal your own
-#### https://terminal.sexy
-#### https://critical.ch/xterm/
-############################################################
-
 [colors]
-# Base16 OneDark
-# Author: Lalit Magant (http://github.com/tilal6991)
+# No transperancy
+#background = rgba(40, 44, 52)
+# Transperancy
+background = rgba(40, 44, 52, 0.90)
 
 foreground      = #abb2bf
 foreground_bold = #56b6c2
 cursor          = #e06c75
-background      = #282c34
-
-# 16 color space
+#background      = #282c34
 
 # Black, Gray, Silver, White
 color0  = #282c34
@@ -91,5 +81,46 @@ color18 = #353b45
 color19 = #3e4451
 color20 = #565c64
 color21 = #b6bdca
+
+[colors]
+# No transperancy
+#background = rgba(255, 255, 255)
+# Transperancy
+#background = rgba(255, 255, 255, 0.90)
+
+#foreground      = #000000
+#foreground_bold = #0000FF
+#cursor          = #A31515
+#background      = #FFFFFF
+
+# Black, Gray, Silver, White
+#color0  = #FFFFFF
+#color8  = #7F9FBF
+#color7  = #000000
+#color15 = #000000
+
+# Red
+#color1  = #A31515
+#color9  = #A31515
+
+# Green
+#color2  = #008000
+#color10 = #008000
+
+# Yellow
+#color3  = #F4C82D
+#color11 = #F4C82D
+
+# Blue
+#color4  = #0000FF
+#color12 = #0000FF
+
+# Purple
+#color5  = #7F0055
+#color13 = #7F0055
+
+# Teal
+#color6  = #2B91AF
+#color14 = #2B91AF
 
 
