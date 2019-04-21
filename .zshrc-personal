@@ -1,0 +1,82 @@
+##############################################################################
+#ALIAS
+##############################################################################
+
+# List
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -la'
+alias l='ls'
+alias l.="ls -A | egrep '^\.'"
+
+# Fix obvious typo's
+alias cd..='cd ..'
+
+# Custom cd
+ 	c() {
+ 		cd $1;
+ 		ls;
+ 	}
+alias cd="c"
+alias pdw="pwd"
+
+# Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Readable output
+alias df='df -h'
+
+# Free
+alias free="free -mt"
+
+# Continue download
+alias wget="wget -c"
+
+# Userlist
+alias userlist="cut -d: -f1 /etc/passwd"
+
+# Ps
+alias ps="ps auxf"
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
+
+# Grub update
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+# Add new fonts
+alias fc='sudo fc-cache -fv'
+
+# Check vulnerabilities microcode
+alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
+
+# Youtube-dl
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
+# Cleanup orphaned packages
+alias cleanup='sudo apt autoremove && sudo apt autoclean && sudo apt clean'
+
+# Update and upgrade
+alias update='sudo apt update && sudo apt upgrade'
+
+# Cava
+ 	cav() {
+		cd;
+ 		cd .cava;
+ 		./cava;
+ 	}
+alias cava="cav"
+
+# Termbin
+alias tb='nc termbin.com 9999'
+
+# cht.sh
+alias cht='cht.sh'
